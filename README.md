@@ -18,30 +18,30 @@ pip install -r requirments.txt
 
 ## Get Started
 
-Dataset are available at https://doi.org/10.5281/zenodo.10025009:
+The Dataset is available at https://doi.org/10.5281/zenodo.10025009:
 
-1. Four category classification of all models
+1. Four category classification of all models.
 ```shell script
-python main.py --case_name=four_category_cls --model_name=xgboost \
+python main.py --case_name=test_classification --model_name=xgboost \
 --classification_method=four_classification --boostrap_num=1 --start_random_state=42 --n_splits=5 \
 --test_features="['evlRNA', 'CTR', 'vCTR', 'Rad',  'Junior', 'Senior', 'evlRNA + CTR', 'evlRNA + vCTR','evlRNA + Rad',  'evlRNA + Junior','evlRNA + Senior', 'evlRNA + Rad + Junior',  'evlRNA + Rad + Senior']" \
 ```
 2. SHAP explanation
 ```shell script
 # total summary plot
-python main.py --case_name=observer_four_classification --model_name=xgboost \
+python main.py --case_name=test_classification --model_name=xgboost \
 --classification_method=four_classification --boostrap_num=1 --start_random_state=42 \
 --cross_validation=0 --n_splits=5 --test_features="['evlRNA', 'Rad', 'evlRNA + Rad']" \
 --need_explain=True --total_summary_plot=True  
 
 # single summary plot
-python main.py --case_name=observer_four_classification --model_name=xgboost \
+python main.py --case_name=test_classification --model_name=xgboost \
 --classification_method=four_classification --boostrap_num=1 --start_random_state=42 \
 --cross_validation=0 --n_splits=5 --test_features="['evlRNA', 'Rad', 'evlRNA + Rad']" \
 --need_explain=True --single_summary_plot=True
 
 # force plot IA index 2
-python main.py --case_name=observer_four_classification --model_name=xgboost \
+python main.py --case_name=test_classification --model_name=xgboost \
 --classification_method=four_classification --boostrap_num=1 --start_random_state=42 \
 --cross_validation=0 --n_splits=5 --test_features="['evlRNA', 'Rad', 'evlRNA + Rad']" \
 --need_explain=True --instance_force_plot=True --instance_index=2 
