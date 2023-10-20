@@ -1,6 +1,6 @@
 # Multimodal Fusion
 
-[paper]: This is the repository for the paper: Multimodal Fusion of Liquid Biopsy and CT Enhances Differential Diagnosis of Early-stage Lung Adenocarcinoma
+[paper]: Multimodal Fusion of Liquid Biopsy and CT Enhances Differential Diagnosis of Early-stage Lung Adenocarcinoma
 
 This research explores the potential of multimodal fusion for the differential diagnosis of early-stage lung adenocarcinoma (LUAD) (tumor sizes < 2 cm). It combines liquid biopsy biomarkers, specifically extracellular vesicle long RNA (evlRNA) and the computed tomography (CT) attributes. The fusion model achieves an impressive cross-validated four-category (Benign, AIS, MIA and IA) AUC of 91.9%, along with a benign-malignant AUC of 94.8% (sensitivity: 89.1%, specificity: 94.3%). These outcomes outperform the diagnostic capabilities of the single-modal models and human experts. A comprehensive SHAP explanation is provided to offer deep insights into model predictions. Our findings reveal the complementary interplay between evlRNA and image-based characteristics, underscoring the significance of integrating diverse modalities in diagnosing early-stage LUAD.
 
